@@ -17,9 +17,14 @@
     margin-left: 170px;
     height: 49px;
     border-radius: 8px;
-    color: white;
+    color: black;
     width: 270px;
     font-size: 20px;
+    text-align: center;
+    line-height: 49px;
+    border: 2px solid black;
+    text-decoration: none;
+    font-size: 0px;
 }
 
 #login-button:hover {
@@ -35,15 +40,17 @@
    border-radius: 9px;
    font-size: large;
    margin-left: 220px;
-   margin-top: 20px;
+   margin-top: 50px;
    width: 200px;
 }
 #signin-button:hover {
-    background-color: green;
+    background-color: aqua;
     color: white;
     opacity: 0.9;
     z-index: 3;
-    border: 3px solid black;
+    border: 2px solid black;
+    transform:translate3d(-2px,-2px,-2px);
+    box-shadow: 0px 0px 1px 1px black;
 }
 #signin-border{
    
@@ -56,7 +63,7 @@
 }
 #dashboard{
 
-    background: linear-gradient(to right, rgb(202, 161, 222), rgb(112, 102, 154));    
+    background: linear-gradient(to right, #00C8FF, #0066CC);    
     min-height: 100vh;
     background-attachment: fixed;
     font-size:40px;
@@ -73,9 +80,119 @@
     border-radius: 30px;
     margin-left:450px;
     height:400px;
-    box-shadow: 70px 30px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    box-shadow: 0 0 100px 15px rgba(75, 0, 130, 0.5);
+    z-index:1;
+    position: relative;
+}
+#pop-up::after{
+    position:absolute;
+    top:30px;
+    background-image: url('./Logo.png');
+    background-size: cover;
+
+}
+#pop-up:hover{
+    box-shadow: 0 0 150px 25px rgba(75, 0, 130, 0.7);
+    transform: translate3D(-8px, -8px, 10px);
+    
 }
 #get-started{
     background-color: rgb(80, 255, 120);
+    border: 2px solid black;
     border-radius:10px;
+    font-size:20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    z-index:8;
+}
+#get-started:hover{
+    background-color: rgb(3, 71, 3);
+    color: white;
+    opacity: 0.9;
+    border: 3px solid black;
+    transform: translate3d(0px,-2px,5px);
+}   
+#text-effect{
+    cursor: pointer;
+    z-index: 8;
+}
+#text-effect:hover{
+    color: purple;
+    text-shadow: 2px 2px 5px pink;
+    transform: translate3D(0px, -5px, 10px);
+}
+#img-adjust{
+    z-index: 4;
+    opacity: 0.4;;
+    top: 200px;
+}
+
+.topbar{
+    width: 100%;
+    height: 67px;
+    border: 1px solid black;
+   
+    background-color: rgb(178, 202, 240);
+    
+    
+   
+}
+.fixedbox{
+    position: absolute;
+    top:16px;
+    border-radius: 12px;
+    height: 50px;
+    width: 180px;
+    z-index: 6;
+    left: 30px;
+}
+
+
+.openpage{
+    background-color: blue;
+    height: 100%;
+    position:absolute;
+    width: 1500px;
+    margin-top:10px;
+    
+}
+
+#profiles{
+    background-color: violet;
+    height:100%;
+    width:450px;
+    
+}
+
+.search-chat{
+    background-color: white;
+    height: 80px;
+    width: 300px;
+    margin-top: 0px;
+    position:relative;
+    border:1px solid black;
+}
+#searchbox{
+    border-radius:20px;
+    height:27px;
+    width:250px;
+    position: absolute;
+    top:40px;
+    left:20px;
+}
+.profiles{
+    background-color: yellow;
+    height: 470px;
+    width: 300px;
+    border:1px solid red;
+}
+.profile1{
+    border-radius:100%;
+    height: 40px;
+    border:1px solid black;
+    margin-left:5px;
+    margin-top:3px;
 }
