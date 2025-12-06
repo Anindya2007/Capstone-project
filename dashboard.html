@@ -1,25 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dashboard</title>
-    <link rel="stylesheet" href="Styling.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuickChat</title>
+  <link rel="stylesheet" href="dashboard.css">
 </head>
+
 <body>
-    <div class="topbar">
-        <img src="logo-full.png" class="fixedbox">
+
+<div class="app">
+
+  <div class="sidebar">
+
+    <div class="sb-top">
+      <img src="logo-full.png" alt="QuickChat Logo" class="logo">
+      <div class="icons">🔍 ⚙️</div>
     </div>
-    <div class="openpage">
-        <div class="search-chat">
-            <h3 style="margin-top: 8px;font-size:25px;margin-left:105px;">Chats</h3>
-            <input type="text" placeholder="Search" id="searchbox">
+
+    <input type="text" class="sb-search" placeholder="Search or start new chat">
+
+    <div class="chat-list">
+
+      <div class="chat active">
+        <div class="avatar">R</div>
+        <div class="info">
+          <div class="row">
+            <span class="name">Rishihood - Residency 2</span>
+            <span class="time">10:29 AM</span>
+          </div>
+          <span class="last">~ You: Any video editor help?</span>
         </div>
-        <div class="profiles">
-            <div style="border: 1px solid black; margin-top:0px;border-radius:4px;height: 50px;position: relative">
-                <img src="Avtar 1.png" class="profile1"> <h4 style="position: absolute;top:0px;left:60px;font-size:30px;">Ankur</h4>
-            </div>
+        
+      </div>
+
+      <div class="chat">
+        <div class="avatar">L</div>
+        <div class="info">
+          <div class="row">
+            <span class="name">LWS Notes</span>
+            <span class="time">10:34 AM</span>
+          </div>
+          <span class="last">~ Prateek: Phir to ye hi sahi h</span>
         </div>
-    <div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- RIGHT CHAT AREA -->
+  <div class="chat-pane">
+
+    <div class="pane-top">
+      <div class="pane-title">Rishihood - Residency 2</div>
+      <div class="pane-icons">📞 🎥 🔍 ⋮</div>
+    </div>
+
+    <div class="pane-body">
+      <span class="placeholder">Select a chat to start messaging</span>
+    </div>
+
+    <div class="pane-input">
+      😊
+      <input type="text" placeholder="Type a message" disabled>
+      🎤
+    </div>
+
+  </div>
+
+</div>
+
 </body>
 </html>
